@@ -1,0 +1,66 @@
+
+/* 3 artykuły */
+.chair-article {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.chair-article-el {
+    width: 400px;
+    height: 200px;
+    margin: 10px;
+}
+
+.chair-article-el:first-of-type{
+    background: url(../images/box1_img.jpg) no-repeat center;
+    position: relative;
+}
+
+.chair-article-el-overlay{
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    background: #fff;
+    opacity: 0.6;
+    bottom: 20px;
+    /* line-height: 40px; */
+    padding-left: 30px;
+    padding-top: 10px; 
+}
+
+.chair-article-el-overlay-text::after {
+    content: '';
+    width: 50%;
+    height: 8px;
+    background: var(--color);
+    display: block;
+    margin-top: 3px;
+}
+
+.chair-article-el:nth-of-type(2){
+    background: url(../images/box2_img.jpg) no-repeat center;
+    position: relative;
+}
+
+.chair-article-el:nth-of-type(3){
+    padding: 20px;
+    font-size: 14px;
+    border: 1px solid rgba(224, 209, 209, 0.8);
+    height: 250px;
+}
+
+.chair-article-el-title::after{
+    content: '';
+    width: 70%;
+    height: 8px;
+    background: var(--color);
+    display: block;
+    margin-top: 3px;
+}
+
+.chair-article-el p {
+    color: #aaa;
+}

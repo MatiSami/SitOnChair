@@ -1,0 +1,107 @@
+/* stylowanie Headera  */
+
+.page-header{
+    height: 40px;
+    background: #000;
+    position: relative;
+    z-index: 9999;
+}
+
+.page-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+}
+
+.page-logo{
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+.page-logo-link{
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.page-logo-link span{
+    color: var(--color);
+}
+
+.page-nav{}
+.page-nav-list{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.page-nav-list-el{
+    position: relative;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page-nav-list-link{
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 25px;
+    transition: 0.3s color;
+}
+
+.page-nav-list-link:hover {
+    color: var(--color)
+}
+
+.page-nav-sublist {
+    position: absolute;
+    background: red;
+    top: calc(100% + 15px);
+    left: 50%;
+    transform: translate(-50%);
+    margin: 0;
+    padding: 10px;
+    list-style-type: none;
+    background: #000;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s opacity;
+}
+.page-nav-sublist-el{}
+.page-nav-sublist-link{
+       text-decoration: none;
+       color: #fff;
+       display: block;
+       padding: 3px;   
+}
+
+.page-nav-list-el:hover .page-nav-sublist {
+    opacity: 1;
+    visibility: visible;
+}
+.page-nav-sublist::before{
+    content: '';
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-bottom-color: #000;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.page-nav-sublist::after{
+    content: '';
+    width: 100%;
+    height: 15px;
+    background: transparent;
+    position: absolute;
+    top: -15px;
+    left: 0;
+}

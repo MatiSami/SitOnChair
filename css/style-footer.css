@@ -1,0 +1,25 @@
+/* footer  */
+
+.footer-block {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #a2a2a2;
+}
+
+.footer-right-side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-logo {
+    margin-left: 50px;
+    text-transform: uppercase;
+}
+
+.footer-logo span {
+    font-weight: bold;
+   
+}
